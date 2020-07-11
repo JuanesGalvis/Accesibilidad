@@ -12,65 +12,144 @@
   </head>
 
   <body>
-    <div class="header-img"></div>
-    <div class="header">Juan Galvis</div>
-    <div class="subtitle">Front End Developer</div>
-    <div class="navigation">
-      <div class="nav-item">Acerca de</div>
-      <div class="nav-item">Mis Proyectos</div>
-      <div class="nav-item">Contacto</div>
-    </div>
+    <header>
+      <img
+        src="https://pbs.twimg.com/profile_images/1222255195264049156/OMT479Pk_400x400.jpg"
+        alt="Imagen de Juan Esteban Galvis"
+        class="header-img"
+      />
+      <h1 class="header">Juan Galvis</h1>
+      <h2 class="subtitle">Front End Developer</h2>
+      <nav>
+        <ul class="navigation">
+          <li class="nav-item"><a href="#me"> Acerca de </a></li>
+          <li class="nav-item"><a href="#Project"> Mis Proyectos </a></li>
+          <li class="nav-item"><a href="#Contact"> Contacto </a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="intro">
-      Hola! Soy Juan Esteban Galvis 👋 Soy Técnico en Programación de Software,
-      estudiante de Ingeniería informática y Platzi 💚! Ayudando así a la
-      automatización de sistemas de información, una mejor gestión de la
-      información y la comunicación entre equipos. Durante mi formación, he
-      realizado numerosos cursos en la plataforma Platzi sobre: Seguridad
-      informática, ortografía, construcción de marcas , periodismo digital,
-      Liderazgo, creación de contenido digital y herramientas colaborativas.
-      <div class="social-media">
-        <div>
-          <a href="https://twitter.com/gmzjuliana" target="_blank"
-            ><img src="images/twitter.png"
-          /></a>
-        </div>
-        <div>
-          <a href="https://github.com/gmzjuliana" target="_blank"
-            ><img src="images/github-logo.png"
-          /></a>
-        </div>
-        <div>
-          <a href="https://www.linkedin.com/in/gomezjuliana/" target="_blank"
-            ><img src="images/linkedin.png"
-          /></a>
-        </div>
-      </div>
-    </div>
+    <main>
+      <section>
+        <h2 class="header" id="me">Acerca de</h2>
+        <p class="intro">
+          Hola! Soy Juan Esteban Galvis 👋 Soy Técnico en Programación de
+          Software, estudiante de Ingeniería informática y Platzi 💚! Ayudando
+          así a la automatización de sistemas de información, una mejor gestión
+          de la información y la comunicación entre equipos. Durante mi
+          formación, he realizado numerosos cursos en la plataforma Platzi
+          sobre: Seguridad informática, ortografía, construcción de marcas ,
+          periodismo digital, Liderazgo, creación de contenido digital y
+          herramientas colaborativas.
+        </p>
+        <ul class="social-media">
+          <li>
+            <a href="https://twitter.com/JuanEGalvis" target="_blank"
+              ><img
+                src="images/twitter.png"
+                alt="Perfil de Juan Esteban Galvis en Twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/JuanesGalvis" target="_blank"
+              ><img
+                src="images/github-logo.png"
+                alt="Perfil de Juan Esteban Galvis en GitHub"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/juanegalvis" target="_blank"
+              ><img
+                src="images/linkedin.png"
+                alt="Perfil de Juan Esteban Galvis en Linkedin"
+            /></a>
+          </li>
+        </ul>
+      </section>
 
-    <div class="carousel">
-      <div class="arrow arrow-left"></div>
-      <div class="window">
-        <div class="project-container">
-          <div class="project project1"></div>
-          <div class="project project2"></div>
-          <div class="project project3"></div>
-          <div class="project project4"></div>
-          <div class="project project5"></div>
+      <section>
+        <h2 class="header" id="Project">Mis Proyectos</h2>
+        <div class="carousel">
+          <div
+            class="arrow arrow-left"
+            aria-label="Botón para ver anterior Proyecto"
+          ></div>
+          <div class="window">
+            <ul class="project-container">
+              <li>
+                <button>
+                  <img
+                    class="project project1"
+                    src="./images/project1.png"
+                    alt="Proyecto #1"
+                  />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img
+                    class="project project2"
+                    src="./images/project2.png"
+                    alt="Proyecto #2"
+                  />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img
+                    class="project project3"
+                    src="./images/project3.png"
+                    alt="Proyecto #3"
+                  />
+                </button>
+              </li>
+              <li aria-hidden="true">
+                <button>
+                  <img
+                    class="project project4"
+                    src="./images/project4.png"
+                    alt="Proyecto #4"
+                  />
+                </button>
+              </li>
+              <li aria-hidden="true">
+                <button>
+                  <img
+                    class="project project5"
+                    src="./images/project5.png"
+                    alt="Proyecto #5"
+                  />
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="arrow arrow-right"
+            aria-label="Botón para ver siguiente Proyecto"
+          ></div>
         </div>
-      </div>
-      <div class="arrow arrow-right"></div>
-    </div>
+      </section>
+    </main>
 
-    <div class="contact-section">
-      <div class="header">Contacto</div>
-      <div class="form-container">
-        Nombre<input type="text" /> <br />
-        Correo<input type="text" /> <br />
-        <div class="message-input">Mensaje<input type="text" /> <br /></div>
-        <div class="send-button">Enviar</div>
-      </div>
-    </div>
+    <footer class="contact-section">
+      <h2 class="header">Contacto</h2>
+      <form class="form-container">
+        <label for="Nombre">Nombre:</label>
+        <input type="text" aria-label="Tu Nombre" id="Nombre" /> <br />
+        <label for="Correo">Correo</label>
+        <input type="email" aria-label="Tu Correo" id="Correo" /> <br />
+        <label for="Mensaje">Mensaje</label>
+        <textarea
+          id="Mensaje"
+          aria-label="Tu Mensaje"
+          cols="48"
+          rows="10"
+        ></textarea>
+        <br />
+        <button class="send-button">Enviar</button>
+      </form>
+    </footer>
+
     <div class="notification">El formulario fue enviado sin errores</div>
     <div class="modal-container">
       <div class="modal">
