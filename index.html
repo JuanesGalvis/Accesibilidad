@@ -74,52 +74,52 @@
       <section>
         <h2 class="header" id="Project">Mis Proyectos</h2>
         <div class="carousel">
-          <div
+          <button
             class="arrow arrow-left"
             aria-label="Botón para ver anterior Proyecto"
-          ></div>
+          ></button>
           <div class="window">
             <ul class="project-container">
-              <li>
-                <button>
+              <li class="project1-container">
+                <button class="project1 project-button">
                   <img
-                    class="project project1"
+                    class="project"
                     src="./images/project1.png"
                     alt="Proyecto #1"
                   />
                 </button>
               </li>
-              <li>
-                <button>
+              <li class="project2-container">
+                <button class="project2 project-button">
                   <img
-                    class="project project2"
+                    class="project"
                     src="./images/project2.png"
                     alt="Proyecto #2"
                   />
                 </button>
               </li>
-              <li>
-                <button>
+              <li class="project3-container">
+                <button class="project3 project-button">
                   <img
-                    class="project project3"
+                    class="project"
                     src="./images/project3.png"
                     alt="Proyecto #3"
                   />
                 </button>
               </li>
-              <li aria-hidden="true">
-                <button>
+              <li aria-hidden="true" class="project4-container">
+                <button class="project4 project-button" tabindex="-1">
                   <img
-                    class="project project4"
+                    class="project"
                     src="./images/project4.png"
                     alt="Proyecto #4"
                   />
                 </button>
               </li>
-              <li aria-hidden="true">
-                <button>
+              <li aria-hidden="true" class="project5-container">
+                <button class="project5 project-button" tabindex="-1">
                   <img
-                    class="project project5"
+                    class="project"
                     src="./images/project5.png"
                     alt="Proyecto #5"
                   />
@@ -127,21 +127,27 @@
               </li>
             </ul>
           </div>
-          <div
+          <button
             class="arrow arrow-right"
             aria-label="Botón para ver siguiente Proyecto"
-          ></div>
+          ></button>
         </div>
       </section>
     </main>
 
     <footer class="contact-section">
       <h2 class="header">Contacto</h2>
+      <p class="intro">
+        Puedes usar el siguiente formulario para mandarme un mensaje ✋
+      </p>
+      <hr />
       <form class="form-container">
         <label for="Nombre">Nombre:</label>
-        <input type="text" aria-label="Tu Nombre" id="Nombre" /> <br />
+        <input type="text" aria-label="Tu Nombre" id="Nombre" />
+        <span aria-live="assertive" id="Nombre__Error"></span> <br />
         <label for="Correo">Correo</label>
-        <input type="email" aria-label="Tu Correo" id="Correo" /> <br />
+        <input type="email" aria-label="Tu Correo" id="Correo" />
+        <span aria-live="assertive" id="Email__Error"></span> <br />
         <label for="Mensaje">Mensaje</label>
         <textarea
           id="Mensaje"
@@ -149,16 +155,27 @@
           cols="48"
           rows="10"
         ></textarea>
-        <br />
+        <span aria-live="assertive" id="Mensaje__Error"></span> <br />
         <button class="send-button">Enviar</button>
       </form>
     </footer>
 
-    <div class="notification">El formulario fue enviado sin errores</div>
+    <!-- Notificacion -->
+    <div class="notification" aria-live="assertive"></div>
+
+    <!-- Modal -->
     <div class="modal-container">
       <div class="modal">
-        Ejemplo de un proyecto mio
-        <div class="modal-project-image"></div>
+        <h2 class="header" id="modal-header" tabindex="0">
+          Ejemplo de Proyecto ✌
+        </h2>
+        <img
+          id="img-modal"
+          src="./images/project1.png"
+          class="modal-project-image"
+          alt="Proyecto de Ejemplo"
+        />
+        <button class="model-button">Cerrar</button>
       </div>
     </div>
 

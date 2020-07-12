@@ -252,6 +252,10 @@ nav {
   border-radius: 50%;
 }
 
+.arrow:focus {
+  outline: 3px solid var(--verde);
+}
+
 .contact-section {
   align-items: center;
   background-color: var(--gris-oscuro);
@@ -264,6 +268,13 @@ nav {
   display: flex;
   flex-direction: column;
   width: 30%;
+}
+
+form span {
+  color: var(--blanco);
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  padding: 8px 0px;
 }
 
 textarea {
@@ -281,7 +292,8 @@ textarea:focus {
   outline: 3px solid var(--verde);
 }
 
-.send-button {
+.send-button,
+.model-button {
   align-items: center;
   background-color: var(--verde);
   border-radius: 5px;
@@ -293,7 +305,9 @@ textarea:focus {
   margin-bottom: 48px;
   width: 150px;
   margin-left: auto;
+  margin-right: auto;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .send-button:focus {
@@ -305,7 +319,7 @@ textarea:focus {
   background-color: var(--verde);
   border-radius: 5px;
   box-shadow: 8px 16px 32px 0px var(--shadow);
-  color: var(--blanco);
+  color: var(--gris-oscuro);
   display: none;
   font-family: var(--secondary-font);
   height: 50px;
@@ -326,6 +340,10 @@ textarea:focus {
   width: 100vw;
 }
 
+#modal-header {
+  outline: 3px solid var(--verde);
+}
+
 .modal {
   align-items: center;
   background-color: var(--gris-oscuro);
@@ -333,7 +351,7 @@ textarea:focus {
   border: 2px solid #000;
   display: flex;
   flex-direction: column;
-  height: 700px;
+  height: 600px;
   justify-content: center;
   position: fixed;
   top: 15%;
@@ -341,7 +359,6 @@ textarea:focus {
 }
 
 .modal-project-image {
-  background: center / cover no-repeat url(./images/project1.png);
   border-radius: 5px;
   border: 2px solid #000;
   height: 400px;
@@ -350,7 +367,7 @@ textarea:focus {
 }
 
 footer label {
-  color: white;
+  color: var(--verde);
   font-size: 20px;
   margin-bottom: 10px;
 }
